@@ -22,6 +22,11 @@ Whether you want to solve puzzles in real time, watch a step-by-step animation, 
 * Erase a single number by selecting the cell and using the 'ERASE' button.
   Clear the entire board using the 'CLEAR' button.
 
+
+## Demonstration
+https://github.com/MohamedAshraf84/Sudoku-Solver/assets/65142746/5c66ca95-7861-455e-b212-fe6cbfdf3027
+
+
 ### TODO
 * Convert the app to a game: Adding a timer to see how long it takes a user to solve a puzzle.
 * Reveal part of the solution: Allow users to reveal parts of the solution for hints or assistance while solving challenging puzzles.
