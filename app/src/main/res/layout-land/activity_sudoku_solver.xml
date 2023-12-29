@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_sudoku_solver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SudokuSolver">
+
+    <com.mohamedahassan.sudokusolver.SudokuBoardView
+        android:id="@+id/sudoku_board_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintDimensionRatio="1:1"
+        custom:layout_constraintEnd_toStartOf="@+id/gl_controls"
+        custom:layout_constraintHorizontal_bias="0.5"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent">
+
+    </com.mohamedahassan.sudokusolver.SudokuBoardView>
+
+    <include
+        android:id="@+id/gl_controls"
+        layout="@layout/controls_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toEndOf="@id/sudoku_board_view"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

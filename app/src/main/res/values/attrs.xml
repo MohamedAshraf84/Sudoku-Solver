@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SudokuBoard">
+        <attr name="board_color" format="color"/>
+        <attr name="highlight_cell_color" format="color"/>
+        <attr name="border_color" format="color"/>
+        <attr name="solved_cell_color" format="color"/>
+        <attr name="number_color" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#7A82AE</color>
+    <color name="colorPrimaryDark">#6370B6</color>
+    <color name="colorAccent">#1F74BF</color>
+
+    <color name="highlight_cell">#363264d9</color>
+    <color name="same_as_selected_cell">#3c123456</color>
+    <color name="wrong_placed_cell">#40FF0000</color>
+    <color name="solve_btn">#B9F4AC</color>
+    <color name="solved_cell">#02EB21</color>
+
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="250dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/baseline_remove_24"
+        android:scaleType="centerCrop"/>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/animation_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/animation"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/animation_switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textOff="@string/animation_off"
+            android:textOn="@string/animation_on"
+            android:textSize="18sp"
+            android:checked="false"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center">
+
+        </androidx.appcompat.widget.SwitchCompat>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/animation_speed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="center"
+            android:text="@string/animation_speed"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/animation_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:progress="@integer/initial_anim_speed">
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/speed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:text="@string/tv_initial_anim_speed"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/difficulty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:layout_marginEnd="4dp"
+            android:text="@string/difficulty"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/difficulty_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_gravity="center"
+            android:entries="@array/difficulties"
+            android:layout_marginEnd="4dp">
+
+        </Spinner>
+    </LinearLayout>
+
+</LinearLayout>
